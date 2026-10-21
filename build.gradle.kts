@@ -23,7 +23,11 @@ allprojects {
     version = rootProject.version
 
     repositories {
-        // mavenLocal()
+        mavenLocal {
+            content {
+                includeGroup("fr.maxlego08.sarah")
+            }
+        }
         mavenCentral()
 
         maven {
